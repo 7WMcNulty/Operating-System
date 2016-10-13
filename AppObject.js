@@ -1,10 +1,8 @@
 function App(n,m,s){
-
     //Declare your instance variables here.
     this.name=n;
     this.memory=m;
     this.state=s;
-
     //Declare the instance function open here.
     this.open = function(){
         this.state = "active";
@@ -20,7 +18,7 @@ function App(n,m,s){
     this.active = function(){
       if(this.state=="sleep"){
         this.state = "active";
-        this.memory = this.memory*4;
+        this.memory = this.memory*2;
       }
     };
     //Declare the instance function close here.
@@ -43,3 +41,5 @@ appList.push(goodreader);
 appList.push(ibooks);
 appList.push(showbie);
 appList.push(safari);
+//If I declare appList first and add "appList.push(this);" into the App
+//constructor then I don't have to push each one into the app.
