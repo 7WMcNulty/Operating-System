@@ -36,10 +36,6 @@ var showbie = new App("Showbie",2000,null);
 var safari = new App("Safari",785,null);
 //Declare an array named appList, and place all 4 of your apps in that array.
 //The order does not matter.
-var appList = [];
-appList.push(goodreader);
-appList.push(ibooks);
-appList.push(showbie);
-appList.push(safari);
-//If I declare appList first and add "appList.push(this);" into the App
-//constructor then I don't have to push each one into the app.
+var appList = [goodreader,ibooks,showbie,safari];
+//If I declared appList first and added "appList.push(this);" into the App
+//constructor then I don't have to push each one into the array.
